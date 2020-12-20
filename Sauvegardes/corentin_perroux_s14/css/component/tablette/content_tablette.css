@@ -1,0 +1,71 @@
+@media screen and (min-width: 530px) and (max-width: 980px) {
+
+    /*530px à 980px*/
+    .img_space img {
+
+        width: 48%;
+    }
+
+
+
+
+    h2 {
+        color: white;
+        margin-bottom: 40px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        color: rgb(110, 168, 161);
+    }
+
+    h3 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.20em;
+        color: rgb(34, 71, 66);
+        margin: 10px 0 12px 0;
+    }
+
+
+}
+
+@media screen and (min-width: 980px) and (max-width: 1216px) {
+
+    /*980px à 1216px*/
+    .img_space img {
+
+        width: 48%;
+    }
+
+
+
+
+    h2 {
+        color: white;
+        margin-bottom: 40px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        color: rgb(110, 168, 161);
+    }
+
+    h3 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.20em;
+        color: rgb(34, 71, 66);
+        margin: 10px 0 12px 0;
+    }
+
+
+}

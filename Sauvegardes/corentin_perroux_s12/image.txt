@@ -1,0 +1,7 @@
+    <?php
+            if($page_img = 'accueil') {
+                ?>
+                <div class="img-head" id="head">
+            <img src="../images/Accueil/Head/Moi-coucher-soleil-2_rogner2.jpg" alt="Corentin PERROUX">
+        </div>
+            <?php } ?>

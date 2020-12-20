@@ -1,0 +1,62 @@
+@media screen and (max-width: 530px) {
+
+    menu {
+
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+
+
+    }
+
+
+    menu .link-menu a {
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 20px;
+        letter-spacing: 0.35em;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    menu .link-menu .photo_artistique {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (min-width: 530px) {
+
+    menu {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        margin: 40px;
+
+
+    }
+
+    menu .link-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    menu .link-menu a {
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 20px;
+        letter-spacing: 0.35em;
+
+    }
+
+
+}

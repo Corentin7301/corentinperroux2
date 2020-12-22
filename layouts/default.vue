@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar />
+    <Header />
     <social-share display="fixed"/>
         <Nuxt />
     <Footer />

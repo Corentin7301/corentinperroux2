@@ -12,14 +12,11 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'
-      },
-      {
-        rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand&display=swap'
+        rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap'
       }
     ]
   },
-  css: ['~/assets/scss/main.scss','~/assets/scss/colors.scss','~/assets/scss/utility.scss'
+  css: ['~/assets/scss/main.scss','~/assets/scss/colors.scss','~/assets/scss/scrollbar.scss','~/assets/scss/utility.scss'
   ],
   plugins: [
   ],

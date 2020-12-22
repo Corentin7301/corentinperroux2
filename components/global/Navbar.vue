@@ -1,17 +1,11 @@
 
 <template>
   <nav>
-    <nuxt-link to="/">
-      <!-- <img
-        src="@/assets/images/logo.svg"
-        alt="logo"
-      > -->
-    </nuxt-link>
     <nuxt-link
-      v-for="item in items" 
+      v-for="item in menu" 
       :key="item.name"
       :to="item.page"
-      class="button"
+      class="menu"
     >{{item.name}}</nuxt-link>
   </nav>
 </template>
@@ -21,10 +15,11 @@ export default {
   name: 'Navbar',
     data() {
       return {
-        items: [
-          {name: 'Accueil', page: '/'},
-          {name: 'A propos', page: '/about'},
-          {name: 'Contact', page: '/contact'}
+        menu: [
+          {name: 'accueil', page: '/'},
+          {name: 'photographie animaliere', page: '/animaliere'},
+          {name: 'photographie de portrait', page: '/portrait'},
+          {name: 'photographie artistique', page: '/artistique'}
         ]
       }
     }
@@ -63,5 +58,3 @@ nav {
   }
 }
 </style>
-
-

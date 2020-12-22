@@ -1,73 +1,92 @@
 <template>
   <div id="footer">
-    <div class="footer-col">
-    <nuxt-link
-      v-for="item in items" 
-      :key="item.name"
-      :to="item.page"
-      class="button"
-    >{{item.name}}</nuxt-link>
+    <nuxt-link to="/">Corentin perroux</nuxt-link>
+    <div class="footer-component">
+      <div class="footer-col">
+        <nuxt-link v-for="item in menu" :key="item.name" :to="item.page" class="menu_footer">{{item.name}}</nuxt-link>
+      </div>
+      <div class="footer-col">
+        <social-share />
+      </div>
     </div>
-    <div class="footer-col">
-   
-        <social-share display="inline" />
-    </div>
+
   </div>
 </template>
 
 <script>
-export default {
-  name: "footer",
-  data() {
-    return {
-      items: [
-          {name: 'Accueil', page: '/'},
-          {name: 'A propos', page: '/about'},
-          {name: 'Contact', page: '/contact'}
+  export default {
+    name: "footer",
+    data() {
+      return {
+        menu: [{
+            name: 'accueil',
+            page: '/'
+          },
+          {
+            name: 'photographie animaliere',
+            page: '/animaliere'
+          },
+          {
+            name: 'photographie de portrait',
+            page: '/portrait'
+          },
+          {
+            name: 'photographie artistique',
+            page: '/artistique'
+          }
         ]
-    };
-  },
-};
+      };
+    },
+  };
+
 </script>
 
 <style lang="scss" scoped>
-#footer {
-  height: 300px;
-  background: $coolGrad;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .footer-col {
-    flex: 0 1 400px;
+  #footer {
+    height: 300px;
+    background: #242424;
     display: flex;
     flex-direction: column;
-    a,
-    p {
-      font-size: 30px;
-      color: white;
-      text-decoration: inherit;
-      font-family: "HelveticaNeue";
-      &:hover {
-        font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.20em;
+
+    a {
+      letter-spacing: 0.35em;
+      margin-bottom: 40px;
+    }
+
+    .footer-component {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-col {
+      flex: 0 1 50%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      a {
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        letter-spacing: 0.20em;
+
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .menu:hover,
+      .nuxt-link-exact-active {
+        color: $orange;
       }
     }
   }
-}
 
-.news {
-  background-color: white;
-  padding: 40px;
-  border-radius: 8px;
-}
-
-.form-cta {
-  color: white;
-  background: $coolGrad;
-  border: none;
-  padding: 8px 12px;
-}
-
-.footer-social {
-  display: flex;
-}
 </style>

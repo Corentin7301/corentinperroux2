@@ -1,74 +1,62 @@
 <template>
-    <ul id="social" :class="displayShow">
-      <social-network url="http://www.instagram.com">
-        <i class="fab fa-instagram"></i>
-      </social-network>
-      <social-network url="http://www.twitter.com">
-        <i class="fab fa-twitter"></i>
-      </social-network>
-      <social-network url="http://www.facebook.com">
-        <i class="fab fa-facebook"></i>
-      </social-network>
-      <social-network url="http://www.linkedin.com">
-        <i class="fab fa-linkedin"></i>
-      </social-network>
-    </ul>
+  <div class="social_footer">
+    <a href="mailto:corentin7301@gmail.com" id="mail">contact</a>
+    <a href="https://corentinperroux.fr/portfolio" id="portfolio">portfolio</a>
+      <ul id="instagram">
+      <h4>Instagram :</h4>
+        <a href="https://www.instagram.com/corentin7301_photos/" target="_blank">
+          <i class="fas fa-camera"></i>
+        </a>
+        <a href="https://www.instagram.com/corentin7301_photos_nature/" target="_blank">
+          <i class="fas fa-paw"></i>
+        </a>
+      </ul>
+    </div>
 </template>
 
 <script>
-export default {
-  name: "socialShare",
-  props: ['display'],
-  data() {
-    return {
-      scrollY:0,
-      // will be hide after 350 px scroll down
-      hideFrom: 350
-      }
-  },
-  methods: {
-    setScrollY(){
-      this.scrollY = window.scrollY;
-    }
-  },
-  computed: {
-    // inline || fixed || none
-    displayShow(){
-      if (this.display === 'inline') {
-        return "inline"
-      } 
-      if ( this.display === "fixed") {
-        if ( this.scrollY > this.hideFrom ){
-          return "none"
-        } else
-        { return "fixed" }
-      }
+import SocialNetwork from './SocialNetwork.vue'
+  export default {
+  components: { SocialNetwork },
+    name: "socialShare",
 
-    }
-  },
-  mounted() {
-    window.addEventListener('scroll', (event) => {
-      this.setScrollY()
-    })
+    data() {
+      return {
+
+      }
+    },
+    methods: {},
+    computed: {
+
+    },
   }
-}
+
 </script>
 
 <style lang="scss" scoped>
+  .social_footer {
 
-.fixed {
-  position: fixed;
-  right: 50px;
-  top: 50%;
-  z-index: 1;
-}
-
-.inline {
-  display: flex;
-}
-
-.none {
-  display: none;
-}
+    #mail,
+    #portfolio {
+      margin: 40px;
+    }
+   
+      #instagram {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        padding: 0;
+        h4 {
+          font-weight: 300;
+          margin-right: 35px;
+        }
+        i {
+          margin: 0 20px;
+          font-size: 25px;
+        }
+    }
+  }
 
 </style>

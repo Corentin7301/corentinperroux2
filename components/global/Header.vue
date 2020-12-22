@@ -49,7 +49,6 @@
     }
 
     h1 {
-      text-transform: uppercase;
       margin: 20px 0 15px 0px;
       font-size: 30px;
       letter-spacing: 0.25em;
@@ -58,7 +57,6 @@
     h2 {
       margin: 0 0 60px 0px;
       color: $orange;
-      text-transform: uppercase;
       font-size: 11px;
       font-weight: 400;
       letter-spacing: 0.45em;

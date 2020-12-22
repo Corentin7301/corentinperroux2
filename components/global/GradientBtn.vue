@@ -33,7 +33,6 @@ export default {
   padding: 17px 24px;
   border-radius: 50px;
   width: 100%;
-  text-transform: uppercase;
   text-align: center;
   box-shadow: 0px 0px 15px #00000031;
   background: linear-gradient(269deg, #FF9E01 0%, #FD910B 0%, #E30870 100%, #804F01 100%);

@@ -28,7 +28,6 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -41,7 +40,6 @@ nav {
   }
   .menu {
     font-size: 15px;
-    text-transform: uppercase;
     margin: 40px;
   }
   .menu:hover,

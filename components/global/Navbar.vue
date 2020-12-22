@@ -28,33 +28,25 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  a {
-    text-decoration: inherit;
-    color: inherit;
-  }
   width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
-  font-family: "HelveticaNeue";
-  font-weight: bold;
-  .button {
-    color: #292724;
-    font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  a {
+    text-decoration: inherit;
+    color: inherit;
+  }
+  .menu {
+    font-size: 15px;
     text-transform: uppercase;
-    padding: 0 21px;
-    border-right: solid 1px grey;
+    margin: 40px;
   }
-  .button:last-child {
-    border-right: none;
-  }
-  .button:hover,
+  .menu:hover,
   .nuxt-link-exact-active {
-    color: $yellow;
-  }
-
-  img {
-    height: 128px;
+    color: $orange;
   }
 }
 </style>

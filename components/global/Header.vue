@@ -31,6 +31,38 @@
 
 </script>
 
-<style>
+<style lang="scss" scoped>
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+
+      width: 100%;
+      height: auto;
+      border: solid 1px rgba(255, 255, 255, .8);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      margin: 20px 0 15px 0px;
+      font-size: 30px;
+      letter-spacing: 0.25em;
+    }
+
+    h2 {
+      margin: 0 0 60px 0px;
+      color: $orange;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.45em;
+    }
+  }
 
 </style>

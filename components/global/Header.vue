@@ -22,7 +22,6 @@
 
 <script>
   export default {
-    props: ['display'],
     data() {
       return {
         scrollY: 0,

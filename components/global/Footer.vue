@@ -51,6 +51,7 @@
     justify-content: center;
     align-items: center;
     letter-spacing: 0.20em;
+    margin-top: 100px;
 
     a {
       letter-spacing: 0.35em;

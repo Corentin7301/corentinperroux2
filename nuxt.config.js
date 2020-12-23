@@ -37,10 +37,18 @@ export default {
   components: true,
   buildModules: [],
   modules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/cloudinary'
   ],
   styleResources: {
     scss: ['~/assets/scss/*.scss']
   },
-  build: {}
+  build: {},
+
+  cloudinary: {
+    cloudName: 'corentin7301',
+    apiKey: '446663536317113', 
+    apiSecret: 'MSjOmtsE0AXPfRgVBnTPnsjbp5M',
+    useComponent: true
+  }
 }

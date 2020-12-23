@@ -1,5 +1,5 @@
 <template>
-  
+  <portrait-gallery />
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  
+  <animaliere-gallery />
 </template>
 
 <script>

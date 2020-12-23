@@ -15,9 +15,7 @@
 </template>
 
 <script>
-import SocialNetwork from './SocialNetwork.vue'
   export default {
-  components: { SocialNetwork },
     name: "socialShare",
 
     data() {

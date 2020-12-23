@@ -9,6 +9,7 @@
         <social-share />
       </div>
     </div>
+        <Copyright />
 
   </div>
 </template>

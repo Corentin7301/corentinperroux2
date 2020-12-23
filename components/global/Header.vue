@@ -1,6 +1,5 @@
 <template>
-  <div class="header" id="top">
-    <img src="~/assets/img/corentin-perroux.jpg" alt="Corentin-PERROUX">
+  <div class="header">
     <h1>
       <nuxt-link to="/">Corentin perroux</nuxt-link>
     </h1>
@@ -12,11 +11,11 @@
             <button id="column2" type="button"><img src="../images/icons/columns2-solid_blanc2.png"
                     alt="columns"></button>
         </div> -->
-    <svg class="w-6 h-6 top" :class="displayShow" @click="scrolltop()" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7">
-        </path>
-      </svg>
+    <svg class="w-6 h-6 top" :class="displayShow" @click="scrolltop()" fill="none" stroke="currentColor"
+      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7">
+      </path>
+    </svg>
   </div>
 </template>
 
@@ -33,10 +32,10 @@
       setScrollY() {
         this.scrollY = window.scrollY;
       },
-        scrolltop() {
-          window.scrollTo(0, 0)
-        }
-      },
+      scrolltop() {
+        window.scrollTo(0, 0)
+      }
+    },
     computed: {
       // fixed || none
       displayShow() {
@@ -64,15 +63,6 @@
     align-items: center;
     justify-content: center;
 
-    img {
-
-      width: 100%;
-      height: auto;
-      border: solid 1px rgba(255, 255, 255, .8);
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
 
     h1 {
       margin: 20px 0 15px 0px;
@@ -95,6 +85,7 @@
       bottom: 50px;
       right: 30px;
       z-index: 99;
+      cursor: pointer;
     }
 
     .none {

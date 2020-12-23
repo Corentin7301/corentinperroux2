@@ -1,10 +1,23 @@
 <template>
   <div>
     <Header />
-        <Nuxt />
+    <Nuxt />
     <Footer />
   </div>
 </template>
 
-<style lang="scss" scoped>
+.<script>
+  export default {
+    data() {
+      return {
+
+      }
+    },
+  }
+
+</script>
+
+<style lang="scss">
+
+
 </style>

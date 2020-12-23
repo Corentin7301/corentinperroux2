@@ -15,5 +15,4 @@ data() {
 </script>
 
 <style lang="scss">
-
 </style>

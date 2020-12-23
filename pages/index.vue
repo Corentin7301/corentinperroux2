@@ -8,6 +8,7 @@
 <script>
   export default {
     name: "",
+    layout: "indexLayout",
     data() {
       return {
         
@@ -29,7 +30,7 @@
 </script>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
   #home {
     display: flex;
     justify-content: center;

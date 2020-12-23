@@ -37,6 +37,7 @@
     #mail,
     #portfolio {
       margin: 40px;
+      color: $orange;
     }
    
       #instagram {
@@ -53,6 +54,7 @@
         i {
           margin: 0 20px;
           font-size: 25px;
+          color: $orange;
         }
     }
   }

@@ -12,11 +12,11 @@
             <button id="column2" type="button"><img src="../images/icons/columns2-solid_blanc2.png"
                     alt="columns"></button>
         </div> -->
-    <a href="#top" :class="displayShow"><svg class="w-6 h-6 top" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+    <svg class="w-6 h-6 top" :class="displayShow" @click="scrolltop()" fill="none" stroke="currentColor" viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7">
         </path>
-      </svg></a>
+      </svg>
   </div>
 </template>
 
@@ -32,16 +32,19 @@
     methods: {
       setScrollY() {
         this.scrollY = window.scrollY;
-      }
-    },
+      },
+        scrolltop() {
+          window.scrollTo(0, 0)
+        }
+      },
     computed: {
       // fixed || none
       displayShow() {
-          if (this.scrollY < this.hideFrom) {
-            return "none"
-          } else {
-            return "fixed"
-          }
+        if (this.scrollY < this.hideFrom) {
+          return "none"
+        } else {
+          return "fixed"
+        }
 
       }
     },

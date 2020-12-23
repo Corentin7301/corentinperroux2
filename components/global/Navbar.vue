@@ -43,7 +43,6 @@ nav {
     margin: 40px;
   }
   .menu:hover,
-  // .nuxt-link-exact-active {
   .nuxt-link-exact-active {
     color: $orange;
   }

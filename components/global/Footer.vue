@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-    <nuxt-link to="/">Corentin perroux</nuxt-link>
+    <a href="#top">Corentin perroux</a>
     <div class="footer-component">
       <div class="footer-col">
         <nuxt-link v-for="item in menu" :key="item.name" :to="item.page" class="menu_footer">{{item.name}}</nuxt-link>
@@ -44,7 +44,7 @@
 
 <style lang="scss" scoped>
   #footer {
-    height: 300px;
+    height: 320px;
     background: #242424;
     display: flex;
     flex-direction: column;
@@ -52,10 +52,11 @@
     align-items: center;
     letter-spacing: 0.20em;
     margin-top: 100px;
+    padding-top: 20px;
 
     a {
       letter-spacing: 0.35em;
-      margin-bottom: 40px;
+      margin: 0 0 40px 0;
     }
 
     .footer-component {

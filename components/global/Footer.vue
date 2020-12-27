@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-    <a href="#top">Corentin perroux</a>
+    <h2 @click="scrolltop()">Corentin perroux</h2>
     <div class="footer-component">
       <div class="footer-col">
         <nuxt-link v-for="item in menu" :key="item.name" :to="item.page" class="menu_footer">{{item.name}}</nuxt-link>
@@ -9,7 +9,7 @@
         <social-share />
       </div>
     </div>
-        <Copyright />
+    <Copyright />
 
   </div>
 </template>
@@ -38,6 +38,11 @@
         ]
       };
     },
+    methods: {
+      scrolltop() {
+        window.scrollTo(0, 0)
+      }
+    },
   };
 
 </script>
@@ -54,9 +59,19 @@
     margin-top: 100px;
     padding-top: 20px;
 
-    a {
+    h2 {
       letter-spacing: 0.35em;
       margin: 0 0 40px 0;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        transition: 0.3s;
+        opacity: 0.5;
+      }
     }
 
     .footer-component {

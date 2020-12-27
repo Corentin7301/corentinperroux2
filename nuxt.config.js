@@ -31,7 +31,7 @@ export default {
       }
     ]
   },
-  css: ['~/assets/scss/main.scss', '~/assets/scss/colors.scss', '~/assets/scss/scrollbar.scss', '~/assets/scss/utility.scss'],
+  css: ['~/assets/scss/main.scss', '~/assets/scss/colors.scss', '~/assets/scss/scrollbar.scss', '~/assets/scss/utility.scss', '~/assets/scss/transition.scss'],
   plugins: [],
   // auto import des comp.
   components: true,
@@ -47,8 +47,16 @@ export default {
 
   cloudinary: {
     cloudName: 'corentin7301',
-    apiKey: '446663536317113', 
+    apiKey: '446663536317113',
     apiSecret: 'MSjOmtsE0AXPfRgVBnTPnsjbp5M',
     useComponent: true
+  },
+  layoutTransition: {
+    name: 'layout-transition',
+    mode: 'out-in'
+  },
+  pageTransition: {
+    name: 'page-transition',
+    mode: 'out-in',
   }
 }

@@ -3,6 +3,7 @@
     <div v-for="photo in photos" :key="photo.id" class="content">
       <cld-image :public-id="path + photo.url + jpg" width="100%" loading="lazy" fetchFormat="auto" quality="auto"
         :alt="photo.description" class="photo" />
+
     </div>
   </div>
 </template>

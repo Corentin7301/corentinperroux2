@@ -23,11 +23,22 @@
 </script>
 
 <style lang="scss">
+
   .gallery {
+    margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 32%);
+    // grid-template-columns: repeat(1, 100%);
+    grid-template-columns: repeat(2, 48%);
     justify-content: center;
-    grid-gap: 30px 15px;
+    grid-gap: 5px 5px;
+  }
+// DESKTOP
+  @media screen and (min-width: 1216px) {
+
+    .gallery {
+      grid-template-columns: repeat(3, 32%);
+      grid-gap: 30px 15px;
+    }
   }
 
 </style>

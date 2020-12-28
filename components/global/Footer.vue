@@ -49,14 +49,14 @@
 
 <style lang="scss" scoped>
   #footer {
-    height: 320px;
+    height: 450px;
     background: #242424;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     letter-spacing: 0.20em;
-    margin-top: 100px;
+    margin-top: 50px;
     padding-top: 20px;
 
     h2 {
@@ -79,17 +79,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
     }
 
     .footer-col {
-      flex: 0 1 50%;
+      flex: 0 1 40%;
       display: flex;
       flex-direction: column;
       text-align: center;
 
       a {
         color: white;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 400;
         margin-bottom: 20px;
         letter-spacing: 0.20em;
@@ -100,9 +101,30 @@
         }
       }
 
-      .menu:hover,
+      .menu_footer:hover,
       .nuxt-link-exact-active {
         color: $orange;
+      }
+    }
+  }
+
+
+  // DESKTOP
+  @media screen and (min-width: 1216px) {
+    #footer {
+      height: 320px;
+      width: 100%;
+
+      .footer-component {
+        flex-direction: row;
+      }
+
+      .footer-col {
+        flex: 0 1 50%;
+
+        a {
+          font-size: 20px;
+        }
       }
     }
   }

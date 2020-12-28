@@ -63,33 +63,48 @@
     align-items: center;
     justify-content: center;
 
-
     h1 {
-      margin: 20px 0 15px 0px;
-      font-size: 30px;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 20px;
       letter-spacing: 0.25em;
     }
 
     h2 {
-      margin: 0 0 60px 0px;
+      margin: 10px 0 20px 0px;
       color: $orange;
       font-size: 11px;
       font-weight: 400;
       letter-spacing: 0.45em;
     }
+  }
 
-    .fixed {
-      position: fixed;
-      width: 25px;
-      height: 25px;
-      bottom: 50px;
-      right: 30px;
-      z-index: 99;
-      cursor: pointer;
-    }
+  // DESKTOP
+  @media screen and (min-width: 1216px) {
+    .header {
 
-    .none {
-      display: none;
+
+      h1 {
+        margin: 20px 0 15px 0px;
+      }
+
+      h2 {
+        margin: 0 0 60px 0px;
+      }
+
+      .fixed {
+        position: fixed;
+        width: 25px;
+        height: 25px;
+        bottom: 50px;
+        right: 30px;
+        z-index: 99;
+        cursor: pointer;
+      }
+
+      .none {
+        display: none;
+      }
     }
   }
 

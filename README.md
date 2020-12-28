@@ -9,7 +9,7 @@ Pour le vérifier
 ```bash
 node --version
 ```
-Au besoin télécharger et instaler [Node](https://nodejs.org/en/)
+Au besoin télécharger et installwer [Node](https://nodejs.org/en/)
 
 
 ### Vue

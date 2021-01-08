@@ -35,11 +35,11 @@
 
 <style lang="scss" scoped>
   .social_footer {
-
+width: 100vw;
     .links {
       display: flex;
       width: 100%;
-
+      justify-content: center;
 
       #mail,
       #portfolio {

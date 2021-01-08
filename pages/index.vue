@@ -1,7 +1,6 @@
 <template>
   <div class="container" id="home">
     <index-gallery />
-
   </div>
 </template>
 

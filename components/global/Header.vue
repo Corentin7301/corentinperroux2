@@ -5,12 +5,12 @@
     </h1>
     <h2>photography</h2>
     <Navbar />
-    <!-- <div class="columns">
-            <button id="column1" type="button"><img src="../images/icons/columns1-solid_blanc2.png"
-                    alt="columns"></button>
-            <button id="column2" type="button"><img src="../images/icons/columns2-solid_blanc2.png"
-                    alt="columns"></button>
-        </div> -->
+    <div class="columns">
+      <button id="column1" type="button" @click="col1()"><img src="~/assets/img/col1.png" alt="columns"
+          @click="col1()"></button>
+      <button id="column2" type="button" @click="col2()"><img src="~/assets/img/col2.png" alt="columns"
+          @click="col2()"></button>
+    </div>
     <svg class="w-6 h-6 top" :class="displayShow" @click="scrolltop()" fill="none" stroke="currentColor"
       viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7">
@@ -34,6 +34,14 @@
       },
       scrolltop() {
         window.scrollTo(0, 0)
+      },
+      col1() {
+        let gallery = document.querySelector('.gallery')
+        gallery.setAttribute('class', 'gallery col1')
+      },
+      col2() {
+        let gallery = document.querySelector('.gallery')
+        gallery.setAttribute('class', 'gallery col2')
       }
     },
     computed: {
@@ -71,11 +79,28 @@
     }
 
     h2 {
-      margin: 10px 0 20px 0px;
+      margin: 10px 0 40px 0px;
       color: $orange;
       font-size: 11px;
       font-weight: 400;
       letter-spacing: 0.45em;
+    }
+
+    button {
+      margin-top: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+
+      img {
+        width: 30px;
+        margin: 5px;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 
@@ -85,11 +110,15 @@
 
 
       h1 {
-        margin: 20px 0 15px 0px;
+        margin: 40px 0 15px 0px;
       }
 
       h2 {
         margin: 0 0 60px 0px;
+      }
+
+      button {
+        display: none;
       }
 
       .fixed {

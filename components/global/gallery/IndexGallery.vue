@@ -3,7 +3,6 @@
     <div v-for="photo in photos" :key="photo.id" class="content">
       <cld-image :public-id="path + photo.url + jpg" width="100%" loading="lazy" fetchFormat="auto" quality="auto"
         :alt="photo.description" class="photo" />
-
     </div>
   </div>
 </template>
@@ -19,11 +18,9 @@
       }
     },
   }
-
 </script>
 
 <style lang="scss">
-
   .gallery {
     margin-top: 50px;
     display: grid;
@@ -32,7 +29,16 @@
     justify-content: center;
     grid-gap: 5px 5px;
   }
-// DESKTOP
+  
+    .col1 {
+      grid-template-columns: repeat(1, 100%);
+    }
+
+    .col2 {
+      grid-template-columns: repeat(2, 48%);
+    }
+
+  // DESKTOP
   @media screen and (min-width: 1216px) {
 
     .gallery {

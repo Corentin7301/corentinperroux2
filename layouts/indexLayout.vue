@@ -1,7 +1,10 @@
 <template>
   <div>
-    <cld-image public-id="corentinperroux.fr/corentin-perroux_yonzzd.jpg" width="100%" loading="lazy" fetchFormat="auto" quality="auto"
+    <div class="img_head">
+
+    <cld-image public-id="corentinperroux.fr/corentinperroux_sighg8.jpg" width="100%" loading="lazy" fetchFormat="auto" quality="auto"
         alt="Corentin-PERROUX" id="img_head" />
+    </div>
     <Header />
     <Nuxt />
     <Footer />
@@ -21,10 +24,17 @@
 
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 
+.img_head {
+    height: 615px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     #img_head {
       width: 100%;
     }
+}
 
 </style>

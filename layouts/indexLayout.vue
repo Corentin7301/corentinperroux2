@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import '@/assets/js/lightbox-plus-jquery.js';
   export default {
     data() {
       return {

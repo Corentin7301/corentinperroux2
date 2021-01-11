@@ -1,9 +1,11 @@
 <template>
   <div class="gallery">
     <div v-for="photo in photos" :key="photo.id" class="content">
-      
-        <a :href="'https://res.cloudinary.com/corentin7301/image/upload/f_auto,q_auto/v1/' + path + photo.url + jpg" data-lightbox="accueil"><cld-image :public-id="path + photo.url + jpg" width="100%" loading="lazy" fetchFormat="auto" quality="auto"
-        :alt="photo.description" class="photo" /></a>
+
+      <a :href="'https://res.cloudinary.com/corentin7301/image/upload/f_auto,q_auto/v1/' + path + photo.url + jpg"
+        data-lightbox="accueil">
+        <cld-image :public-id="path + photo.url + jpg" width="100%" loading="lazy" fetchFormat="auto" quality="auto"
+          :alt="photo.description" class="photo" /></a>
     </div>
   </div>
 </template>
@@ -19,6 +21,7 @@
       }
     },
   }
+
 </script>
 
 <style lang="scss">
@@ -30,14 +33,24 @@
     justify-content: center;
     grid-gap: 5px 5px;
   }
-  
-    .col1 {
-      grid-template-columns: repeat(1, 100%);
-    }
 
-    .col2 {
-      grid-template-columns: repeat(2, 48%);
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a:hover {
+      opacity: 0.9;
     }
+  }
+
+  .col1 {
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  .col2 {
+    grid-template-columns: repeat(2, 48%);
+  }
 
   // DESKTOP
   @media screen and (min-width: 1216px) {

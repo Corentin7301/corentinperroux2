@@ -2,7 +2,7 @@ export default {
   ssr: false,
   target: 'static',
   head: {
-    title: 'Template NUXT',
+    title: 'Corentin PERROUX',
     meta: [{
         charset: 'utf-8'
       },
@@ -13,7 +13,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Template NUXT starter kit description'
+        content: 'Corentin PERROUX photographie'
       }
     ],
     link: [{

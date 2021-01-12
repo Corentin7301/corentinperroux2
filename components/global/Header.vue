@@ -3,7 +3,7 @@
     <h1>
       <nuxt-link to="/">Corentin perroux</nuxt-link>
     </h1>
-    <h2>photography</h2>
+    <h2>photographie</h2>
     <Navbar />
     <div class="columns">
       <button id="column1" type="button" @click="col1()"><img src="~/assets/img/col1.png" alt="columns"

@@ -11,6 +11,17 @@ data() {
         
     }
 },
+    head() {
+      return {
+        //  string or this.XXXX
+        titre: "Artistique",
+        meta: [{
+          hid: 'description',
+          name: 'description',
+          content: 'Page photo artistique Corentin PERROUX photographie'
+        }]
+      }
+    }
 }
 </script>
 

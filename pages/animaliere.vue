@@ -9,6 +9,17 @@ data() {
         
     }
 },
+    head() {
+      return {
+        //  string or this.XXXX
+        titre: "Animalier",
+        meta: [{
+          hid: 'description',
+          name: 'description',
+          content: 'Page photo animalière Corentin PERROUX photographie'
+        }]
+      }
+    }
 }
 </script>
 

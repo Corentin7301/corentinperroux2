@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: "",
+    name: "accueil",
     layout: "indexLayout",
     data() {
       return {
@@ -16,11 +16,11 @@
     head() {
       return {
         //  string or this.XXXX
-        titre: "my home",
+        titre: "Corentin PERROUX",
         meta: [{
           hid: 'description',
           name: 'description',
-          content: 'My home description '
+          content: 'Page d\'accueil Corentin PERROUX photographie'
         }]
       }
     }

@@ -1,6 +1,6 @@
 <template>
 <div>
-  <p>© Copyright <a href="https://corentinperroux.fr/portfolio/" target="_blank">Corentin PERROUX </a>2020</p>
+  <p>© Copyright <a href="https://portfolio.corentinperroux.fr" target="_blank">Corentin PERROUX </a>2020</p>
 </div>
 </template>
 

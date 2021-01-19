@@ -2,7 +2,7 @@
   <div class="social_footer">
     <div class="links">
       <a href="mailto:corentin7301@gmail.com" id="mail">contact</a>
-      <a href="https://corentinperroux.fr/portfolio" id="portfolio">portfolio</a>
+      <a href="https://portfolio.corentinperroux.fr" id="portfolio">portfolio</a>
     </div>
     <ul id="instagram">
       <h4>Instagram :</h4>

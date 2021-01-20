@@ -32,7 +32,9 @@ export default {
     ]
   },
   css: ['~/assets/scss/main.scss', '~/assets/scss/colors.scss', '~/assets/scss/scrollbar.scss', '~/assets/scss/transition.scss','~/assets/scss/lightbox.scss'],
-  plugins: [],
+  plugins: [
+    { src: '~plugins/ga.js', mode: 'client' }
+  ],
   // auto import des comp.
   components: true,
   buildModules: [],

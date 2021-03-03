@@ -3,6 +3,7 @@
     <div class="links">
       <a href="mailto:corentin7301@gmail.com" id="mail">contact</a>
       <a href="https://portfolio.corentinperroux.fr" id="portfolio" target="_blank">portfolio</a>
+      <a href="https://blog.corentinperroux.fr" id="blog" target="_blank">blog</a>
     </div>
     <ul id="instagram">
       <h4>Instagram :</h4>
@@ -42,7 +43,7 @@ width: 100vw;
       justify-content: center;
 
       #mail,
-      #portfolio {
+      #portfolio, #blog {
         margin: 60px 40px 0 40px;
         color: $orange;
       }

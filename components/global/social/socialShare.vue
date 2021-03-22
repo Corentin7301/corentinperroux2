@@ -5,7 +5,7 @@
       <a href="https://portfolio.corentinperroux.fr" id="portfolio" target="_blank">portfolio</a>
       <a href="https://blog.corentinperroux.fr" id="blog" target="_blank">blog</a>
     </div>
-    <ul id="instagram">
+    <div id="instagram">
       <h4>Instagram :</h4>
       <a href="https://www.instagram.com/corentin7301_photos/" target="_blank">
         <i class="fas fa-camera"></i>
@@ -13,7 +13,7 @@
       <a href="https://www.instagram.com/corentin7301_photos_nature/" target="_blank">
         <i class="fas fa-paw"></i>
       </a>
-    </ul>
+    </div>
   </div>
 </template>
 
@@ -36,21 +36,21 @@
 
 <style lang="scss" scoped>
   .social_footer {
-width: 100vw;
+    width: 90vw;
+
     .links {
       display: flex;
-      width: 100%;
-      justify-content: center;
+      justify-content: space-around;
 
       #mail,
-      #portfolio, #blog {
-        margin: 60px 40px 0 40px;
+      #portfolio,
+      #blog {
+        margin-top: 60px;
         color: $orange;
       }
     }
 
     #instagram {
-      list-style: none;
       display: flex;
       align-items: center;
       justify-content: center;

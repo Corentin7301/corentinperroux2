@@ -14,7 +14,71 @@ export default {
         hid: 'description',
         name: 'description',
         content: 'Corentin PERROUX photographie'
-      }
+      },
+      {
+        property: "og:site_name",
+        content: "Corentin PERROUX photographie"
+      },
+      {
+        hid: "og:type",
+        property: "og:type",
+        content: "website"
+      },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: `https://corentinperroux.fr`,
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Corentin PERROUX photographie",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "Corentin PERROUX photographie",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://res.cloudinary.com/corentin7301/image/upload/v1610110316/corentinperroux.fr/corentinperroux_sighg8.jpg",
+      },
+      {
+        property: "og:image:width",
+        content: "740"
+      },
+      {
+        property: "og:image:height",
+        content: "300"
+      },
+
+      {
+        name: "twitter:site",
+        content: "@corentinperroux"
+      },
+      // { name: "twitter:card", content: "summary_large_image" }, 
+      {
+        hid: "twitter:url",
+        name: "twitter:url",
+        content: "https://corentinperroux.fr",
+      },
+      {
+        hid: "twitter:title",
+        name: "twitter:title",
+        content: "Corentin PERROUX photographie",
+      },
+      {
+        hid: "twitter:description",
+        name: "twitter:description",
+        content: "Corentin PERROUX photographie",
+      },
+      {
+        hid: "twitter:image",
+        name: "twitter:image",
+        content: "https://res.cloudinary.com/corentin7301/image/upload/v1610110316/corentinperroux.fr/corentinperroux_sighg8.jpg",
+      },
+
     ],
     link: [{
         rel: 'icon',
@@ -40,8 +104,34 @@ export default {
   buildModules: [],
   modules: [
     '@nuxtjs/style-resources',
-    '@nuxtjs/cloudinary'
+    '@nuxtjs/cloudinary',
+
+    // always at the end of array
+    '@nuxtjs/sitemap',
   ],
+
+  sitemap: {
+    hostname: 'https://corentinperroux.fr',
+    routes: async () => {
+      
+      const dynamicArticles = ""
+      const staticPages = [
+        "/",
+        "/animaliere",
+        "/portrait",
+        "/artistique",
+      ]
+      return [...dynamicArticles, ...staticPages]
+    },
+  },
+
+
+
+
+
+
+
+
   styleResources: {
     scss: ['~/assets/scss/*.scss']
   },

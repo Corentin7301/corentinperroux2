@@ -1,6 +1,6 @@
 <template>
 <div>
-  <p>© Copyright <a href="https://portfolio.corentinperroux.fr" target="_blank">Corentin PERROUX </a>2020 || Photos non libres de droit</p>
+  <p>© Copyright <a href="https://portfolio.corentinperroux.fr" target="_blank">Corentin PERROUX </a>{{ new Date().getFullYear() }} || Photos non libres de droit</p>
 </div>
 </template>
 

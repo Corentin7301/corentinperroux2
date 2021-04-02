@@ -117,7 +117,8 @@ export default {
 
   // :::::::::::::::::::::::::::::::::::
   generate: {
-    fallback: true
+    fallback: true,
+    routes: ['/', '/animaliere', '/portrait', '/artistique']
   },
 
   sitemap: {

@@ -115,6 +115,11 @@ export default {
     '@nuxtjs/sitemap',
   ],
 
+  // :::::::::::::::::::::::::::::::::::
+  generate: {
+    fallback: true
+  },
+
   sitemap: {
     hostname: 'https://corentinperroux.fr',
     routes: async () => {

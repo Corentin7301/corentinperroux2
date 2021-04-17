@@ -30,7 +30,7 @@ export default ({ app }) => {
     /*
      ** Affecter la page courante
      */
-    ga('create', 'UA-153705101-1', 'auto')
+    ga('create', process.env.GOOGLE_ANALYTICS_ID , 'auto')
     /*
      ** Chaque fois que la route change
      */

@@ -149,9 +149,9 @@ export default {
   build: {},
 
   cloudinary: {
-    cloudName: 'corentin7301',
-    apiKey: '446663536317113',
-    apiSecret: 'MSjOmtsE0AXPfRgVBnTPnsjbp5M',
+    cloudName: process.env.CLOUD_NAME,
+    apiKey: process.env.API_KEY,
+    apiSecret: process.env.API_SECRET,
     useComponent: true
   },
   layoutTransition: {

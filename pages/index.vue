@@ -5,7 +5,9 @@
 </template>
 
 <script>
+import IndexGallery from '~/components/global/gallery/IndexGallery.vue'
   export default {
+  components: { IndexGallery },
     name: "accueil",
     layout: "indexLayout",
     data() {

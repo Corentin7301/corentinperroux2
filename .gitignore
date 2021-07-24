@@ -139,5 +139,6 @@ dist
 dist/
 npm-debug.log
 yarn-error.log
+.DS_store
 
 # End of https://www.toptal.com/developers/gitignore/api/nuxt,node,vuejs,visualstudiocode

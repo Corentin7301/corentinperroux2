@@ -3,7 +3,9 @@
 </template>
 
 <script>
+import AnimaliereGallery from '~/components/global/gallery/AnimaliereGallery.vue'
 export default {
+  components: { AnimaliereGallery },
 data() {
     return {
         

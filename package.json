@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-101",
+  "name": "corentinperroux2",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,13 +12,13 @@
     "production": "npm run build && nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/cloudinary": "^1.0.3-beta-1",
+    "@nuxtjs/cloudinary": "^1.0.3-beta-3",
     "@nuxtjs/sitemap": "^2.4.0",
-    "nuxt": "^2.14.7"
+    "nuxt": "^2.15.7"
   },
   "devDependencies": {
-    "@nuxtjs/style-resources": "^1.0.0",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^10.0.3"
+    "@nuxtjs/style-resources": "^1.2.0",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^10.2.0"
   }
 }

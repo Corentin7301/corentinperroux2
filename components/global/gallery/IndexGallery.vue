@@ -13,6 +13,7 @@
 <script>
   import photos from '@/data/accueil.json';
   export default {
+    name: "IndexGallery",
     data() {
       return {
         photos,

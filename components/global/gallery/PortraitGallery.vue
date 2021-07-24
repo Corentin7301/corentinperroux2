@@ -10,6 +10,7 @@
 <script>
   import photos from '@/data/portrait.json';
   export default {
+    name: "PortraitGallery",
     data() {
       return {
         photos,

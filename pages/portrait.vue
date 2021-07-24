@@ -3,7 +3,9 @@
 </template>
 
 <script>
+import PortraitGallery from '~/components/global/gallery/PortraitGallery.vue'
 export default {
+  components: { PortraitGallery },
 data() {
     return {
         
